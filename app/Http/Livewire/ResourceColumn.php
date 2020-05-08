@@ -3,8 +3,8 @@
 namespace App\Http\Livewire;
 
 use App\Appointment;
-use Carbon\Carbon;
 use Livewire\Component;
+use Ramsey\Uuid\Uuid;
 
 class ResourceColumn extends Component
 {
@@ -18,9 +18,9 @@ class ResourceColumn extends Component
 
     public $title;
 
-    public $selectedTimeSlot;
+    public $starts_at;
 
-    public $selectedFraction;
+    public $ends_at;
 
     public function mount($resource, $timeSlots, $appointments)
     {
@@ -35,8 +35,17 @@ class ResourceColumn extends Component
 
     public function timeSlotFractionClick($timeSlot, $fraction)
     {
-        $this->selectedTimeSlot = $timeSlot;
-        $this->selectedFraction = $fraction;
+        $this->title = '';
+
+        $this->starts_at = today()
+            ->setTime($timeSlot, $fraction)
+            ->format('Y-m-d H:i:s')
+        ;
+
+        $this->ends_at = today()
+            ->setTime($timeSlot, $fraction)->addHour()
+            ->format('Y-m-d H:i:s')
+        ;
 
         $this->openModal = true;
     }
@@ -45,8 +54,8 @@ class ResourceColumn extends Component
     {
         Appointment::create([
             'title' => $this->title,
-            'starts_at' => today()->setHour($this->selectedTimeSlot)->setMinutes($this->selectedFraction),
-            'ends_at' => today()->setHour($this->selectedTimeSlot)->setMinutes($this->selectedFraction)->addMinutes(15),
+            'starts_at' => $this->starts_at,
+            'ends_at' => $this->ends_at,
             'for' => $this->resource,
         ]);
 

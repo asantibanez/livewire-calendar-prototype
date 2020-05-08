@@ -24,7 +24,7 @@ class ResourcesCalendar extends Component
     {
         $this->resources = $resources;
 
-        $this->timeSlots = range(0, 23);
+        $this->timeSlots = range(8, 20);
 
         $this->uuid = Uuid::uuid4()->toString();
     }

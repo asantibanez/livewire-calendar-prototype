@@ -11,6 +11,27 @@
 
     <!-- Styles -->
     <livewire:styles/>
+
+    <style>
+        /* 2 hours */
+        .h-64 {
+            height: 16rem;
+        }
+
+        /* 3 hours */
+        .h-96 {
+            height: 24rem;
+        }
+
+        /* 4 hours */
+        .h-128 {
+            height: 32rem;
+        }
+
+        .h-144 {
+            height: 36rem;
+        }
+    </style>
 </head>
 
 <body>
@@ -25,12 +46,10 @@
         ]
     @endphp
 
-    <div class="container mx-auto overflow-y-auto">
-        <livewire:resources-calendar
-            :day="today()"
-            :resources="$resources"
-        />
-    </div>
+    <livewire:resources-calendar
+        :day="today()"
+        :resources="$resources"
+    />
 
 </div>
 <livewire:scripts/>

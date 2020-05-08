@@ -21,6 +21,7 @@
                     :resource="$resource"
                     :key="$uuid . '-' . $resource"
                     :appointments="$resourceAppointments"
+                    :appointment-component="$appointmentComponent"
                 />
             @endforeach
 

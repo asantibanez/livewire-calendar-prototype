@@ -49,6 +49,7 @@
     <livewire:resources-calendar
         :day="today()"
         :resources="$resources"
+        appointment-component="appointment-dark"
     />
 
 </div>

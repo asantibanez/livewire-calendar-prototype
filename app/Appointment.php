@@ -7,4 +7,9 @@ use Illuminate\Database\Eloquent\Model;
 class Appointment extends Model
 {
     protected $guarded = [];
+
+    protected $dates = [
+        'starts_at',
+        'ends_at',
+    ];
 }

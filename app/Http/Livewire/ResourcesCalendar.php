@@ -10,6 +10,8 @@ class ResourcesCalendar extends Component
 {
     public $resources;
 
+    public $appointmentComponent;
+
     public $timeSlots;
 
     public $appointments;
@@ -17,12 +19,15 @@ class ResourcesCalendar extends Component
     public $uuid;
 
     protected $listeners = [
-        'appointmentCreated' => 'refreshCalendar'
+        'appointmentCreated' => 'refreshCalendar',
+        'appointmentUpdated' => 'refreshCalendar'
     ];
 
-    public function mount($resources)
+    public function mount($resources, $appointmentComponent)
     {
         $this->resources = $resources;
+
+        $this->appointmentComponent = $appointmentComponent;
 
         $this->timeSlots = range(8, 20);
 

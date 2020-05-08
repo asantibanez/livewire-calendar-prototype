@@ -2,12 +2,14 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="7e1f06ac-e107-4215-b72a-ed1b35db7e60" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Appointment.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Appointment.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Livewire/Appointment.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Livewire/Appointment.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Http/Livewire/ResourceColumn.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Livewire/ResourceColumn.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Http/Livewire/ResourcesCalendar.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Livewire/ResourcesCalendar.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/livewire/resource-column.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/livewire/resource-column.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/livewire/resources-calendar.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/livewire/resources-calendar.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/livewire/time-column.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/livewire/time-column.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/welcome.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/welcome.blade.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -144,8 +146,9 @@
   </component>
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/resources/views" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -157,6 +160,7 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/resources/views" />
       <recent name="$PROJECT_DIR$" />
       <recent name="$PROJECT_DIR$/resources/views/livewire" />
     </key>
@@ -179,6 +183,7 @@
       <updated>1588867325054</updated>
       <workItem from="1588867327189" duration="19916000" />
       <workItem from="1588902860041" duration="5958000" />
+      <workItem from="1588947596099" duration="3041000" />
     </task>
     <servers />
   </component>
@@ -200,10 +205,10 @@
     </state>
     <state x="468" y="269" width="659" height="518" key="find.popup/0.23.1280.777@0.23.1280.777" timestamp="1588903000574" />
     <state x="936" y="472" width="687" height="518" key="find.popup/0.23.2560.1417@0.23.2560.1417" timestamp="1588882305007" />
-    <state x="473" y="201" width="670" height="371" key="search.everywhere.popup" timestamp="1588909280044">
-      <screen x="0" y="23" width="1280" height="777" />
+    <state x="945" y="348" width="670" height="676" key="search.everywhere.popup" timestamp="1588950830907">
+      <screen x="0" y="23" width="2560" height="1417" />
     </state>
     <state x="473" y="201" width="670" height="371" key="search.everywhere.popup/0.23.1280.777@0.23.1280.777" timestamp="1588909280044" />
-    <state x="945" y="348" width="670" height="676" key="search.everywhere.popup/0.23.2560.1417@0.23.2560.1417" timestamp="1588895941875" />
+    <state x="945" y="348" width="670" height="676" key="search.everywhere.popup/0.23.2560.1417@0.23.2560.1417" timestamp="1588950830907" />
   </component>
 </project>

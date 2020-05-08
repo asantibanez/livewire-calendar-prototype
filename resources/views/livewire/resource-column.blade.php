@@ -41,10 +41,10 @@
                         @endphp
 
                         @foreach($appointmentsInTimeSlotFraction as $appointment)
-                            <livewire:appointment
-                                :key="$appointment['id']"
-                                :appointment="$appointment"
-                            />
+                            @include($appointmentComponent, [
+                                'key' => $appointment['id'],
+                                '$appointment' => $appointment,
+                            ])
                         @endforeach
                     </div>
                 @endforeach

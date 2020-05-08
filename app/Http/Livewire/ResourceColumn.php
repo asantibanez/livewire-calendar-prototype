@@ -10,6 +10,8 @@ class ResourceColumn extends Component
 {
     public $resource;
 
+    public $appointmentComponent;
+
     public $timeSlots;
 
     public $appointments;
@@ -22,13 +24,15 @@ class ResourceColumn extends Component
 
     public $ends_at;
 
-    public function mount($resource, $timeSlots, $appointments)
+    public function mount($resource, $timeSlots, $appointments, $appointmentComponent)
     {
         $this->resource = $resource;
 
         $this->timeSlots = $timeSlots;
 
         $this->appointments = $appointments;
+
+        $this->appointmentComponent = $appointmentComponent;
 
         $this->openModal = false;
     }
